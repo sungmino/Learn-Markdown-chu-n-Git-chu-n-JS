@@ -32,271 +32,298 @@ ví dụ:
 
 `***vừa in ngiêng vừa bôi đậm***`
 
-- Dùng cú pháp: ```inline code`` ` để viết inline code
+## Chèn code
 
-- Để viết highlight block code  dùng cú pháp:
+Trong dòng:
 
-  \```php
+```
+`print('hello world')`
+```
 
-  echo ("highlight code");
+Kết quả: `print('hello world')`
 
-  \```
+Khối code:
 
-  sẽ được kết quả là: echo("highlight code");
+```
+​```python
+print('hello world')
+​```
+```
 
-  # Link, image
 
-  ### Link
 
-  Để chèn link vào bài viết, bạn dùng cú pháp sau
+## Chèn toán
 
-  ```none
-  [title](http://~)
-  ```
+```
+$a^2 + b^2 = \frac{b}{c}$
 
-  Ví dụ
+$\sum_{n = 1}^{\infty} \frac{1}{n} = \infty$
+```
 
-  ```none
-  [Markdown](http://https://vi.wikipedia.org/wiki/Markdown)
-  ```
+Kết quả: a2+b2=bc ∑∞n=11n=∞
 
-  => [Markdown](http://https//vi.wikipedia.org/wiki/Markdown)
 
-  ### Image
 
-  Cú pháp chèn hình ảnh như sau
+## Chèn bảng
 
-  ```none
-  ![alt](http://~)
-  ```
+```
+​```
+id | a | b|
+|-|-|-|
+1 | 2 | 3
+​```
+```
 
-  Ví dụ nếu viết
+Kết quả:
 
-  ```none
-  ![alt](http://http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
-  ```
+| id   | a    | b    |
+| :--- | :--- | :--- |
+| 1    | 2    | 3    |
 
-  thì bạn sẽ chèn được hình ảnh như thế này rồi.![alt](http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
+# Link, image
 
-  
+### Link
 
-  ## List
+Để chèn link vào bài viết, bạn dùng cú pháp sau
 
-  ### List dạng gạch đầu dòng
+```none
+[title](http://~)
+```
 
-  ```none
-  * item
-  ```
+Ví dụ
 
-  Ví dụ bạn viết
+```none
+[Markdown](http://https://vi.wikipedia.org/wiki/Markdown)
+```
 
-  ```none
-  * item 1
-  * item 2
-  * item 3
-  ```
+=> [Markdown](http://https//vi.wikipedia.org/wiki/Markdown)
 
-  thì sẽ được kết quả như sau
+### Image
 
-  - item 1
-  - item 2
-  - item 3
+Cú pháp chèn hình ảnh như sau
 
-  ### List dạng số
+```none
+![alt](http://~)
+```
 
-  ```none
-  1. item
-  ```
+Ví dụ nếu viết
 
-  Ví dụ bạn viết
+```none
+![alt](http://http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
+```
 
-  ```none
-  1. item 1
-  2. item 2
-  3. item 3
-  ```
+thì bạn sẽ chèn được hình ảnh như thế này rồi.![alt](http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
 
-  thì sẽ được kết quả như sau
 
-  1. item 1
-  2. item 2
-  3. item 3
 
-  ## Horizonal rules
+## List
 
-  Để có được horizonal rules bạn chỉ cần viết *** như sau
+### List dạng gạch đầu dòng
 
-  ```none
-  ***
-  horizonal rules
-  ```
+```none
+* item
+```
 
-  kết quả là
+Ví dụ bạn viết
 
-  ------
+```none
+* item 1
+* item 2
+* item 3
+```
 
-  horizonal rules
+thì sẽ được kết quả như sau
 
-  ## Blockquotes
+- item 1
+- item 2
+- item 3
 
-  Cú pháp blockquotes là
+### List dạng số
 
-  ```none
-  > text
-  ```
+```none
+1. item
+```
 
-  kết quả:
+Ví dụ bạn viết
 
-  > text
+```none
+1. item 1
+2. item 2
+3. item 3
+```
 
-  ## Escape markdown
+thì sẽ được kết quả như sau
 
-  Đôi khi trong khi viết bài bạn sẽ sử dụng những kí kiệu trùng với cú pháp của markdown. Để phân biệt, bạn chỉ cần thêm dấu \ trước những kí hiệu đó là được.
+1. item 1
+2. item 2
+3. item 3
 
-  Ví dụ nếu bạn viết
+## Horizonal rules
 
-  ```none
-  \*text*
-  ```
+Để có được horizonal rules bạn chỉ cần viết *** như sau
 
-  thì kết quả sẽ là *text* chứ không phải *text*(in nghiêng)
+```none
+***
+horizonal rules
+```
 
-  ## Viblo advanced Markdown Embedment
+kết quả là
 
-  Hiện tại Viblo hỗ trợ chèn link từ **Youtube**, **Vimeo**, **Slideshare**, **Codepen**, **Gist**, **JSFiddle** và **Google Slide**. Cú pháp như dưới đây:
+------
 
-  ### Youtube
+horizonal rules
 
-  ```none
-  {@youtube: Youtube ID or URL}
-  ```
+## Blockquotes
 
-  Ví dụ
+Cú pháp blockquotes là
 
-  ```none
-  {@youtube: https://www.youtube.com/watch?v=HndN6P9ke6U}
-  ```
+```none
+> text
+```
 
-  
+kết quả:
 
-  <iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://www.youtube.com/watch?v=HndN6P9ke6U&amp;provider=youtube" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
+> text
 
-  
+## Escape markdown
 
-  ### Vimeo
+Đôi khi trong khi viết bài bạn sẽ sử dụng những kí kiệu trùng với cú pháp của markdown. Để phân biệt, bạn chỉ cần thêm dấu \ trước những kí hiệu đó là được.
 
-  ```none
-  {@vimeo: Vimeo ID or URL}
-  ```
+Ví dụ nếu bạn viết
 
-  Ví dụ
+```none
+\*text*
+```
 
-  ```none
-  {@vimeo: https://vimeo.com/62604492}
-  ```
+thì kết quả sẽ là *text* chứ không phải *text*(in nghiêng)
 
-  
+## Viblo advanced Markdown Embedment
 
-  <iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://vimeo.com/62604492&amp;provider=vimeo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
+Hiện tại Viblo hỗ trợ chèn link từ **Youtube**, **Vimeo**, **Slideshare**, **Codepen**, **Gist**, **JSFiddle** và **Google Slide**. Cú pháp như dưới đây:
 
-  
+### Youtube
 
-  ### Slideshare
+```none
+{@youtube: Youtube ID or URL}
+```
 
-  ```none
-  {@slideshare: Slideshare ID or URL}
-  ```
+Ví dụ
 
-  Ví dụ
+```none
+{@youtube: https://www.youtube.com/watch?v=HndN6P9ke6U}
+```
 
-  ```none
-  {@slideshare: http://www.slideshare.net/asanzdiego/markdown-slides-en}
-  ```
 
-  
 
-  <iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=http://www.slideshare.net/asanzdiego/markdown-slides-en&amp;provider=slideshare" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
+<iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://www.youtube.com/watch?v=HndN6P9ke6U&amp;provider=youtube" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
 
-  
 
-  ### Codepen
+### Vimeo
 
-  ```none
-  {@codepen: Codepen ID or URL}
-  ```
+```none
+{@vimeo: Vimeo ID or URL}
+```
 
-  Ví dụ
+Ví dụ
 
-  ```none
-  {@codepen: https://codepen.io/nickmoreton/pen/gbyygq}
-  ```
+```none
+{@vimeo: https://vimeo.com/62604492}
+```
 
-  
 
-  <iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://codepen.io/nickmoreton/pen/gbyygq&amp;provider=codepen" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
 
-  
+<iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://vimeo.com/62604492&amp;provider=vimeo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
 
-  ### Gist
 
-  ```none
-  {@gist: Gist ID or URL}
-  ```
+### Slideshare
 
-  Ví dụ
+```none
+{@slideshare: Slideshare ID or URL}
+```
 
-  ```none
-  {@gist: https://gist.github.com/JeffreyWay/207e3bfdb5cafff050a1d75dbf755a5c}
-  ```
+Ví dụ
 
-  
+```none
+{@slideshare: http://www.slideshare.net/asanzdiego/markdown-slides-en}
+```
 
-  <iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://gist.github.com/JeffreyWay/207e3bfdb5cafff050a1d75dbf755a5c&amp;provider=gist" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
 
-  
 
-  ### JSFiddle
+<iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=http://www.slideshare.net/asanzdiego/markdown-slides-en&amp;provider=slideshare" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
 
-  ```none
-  {@jsfiddle: JSFiddle URL}
-  ```
 
-  Ví dụ
+### Codepen
 
-  ```none
-  {@jsfiddle: http://jsfiddle.net/kizu/zfUyN/}
-  ```
+```none
+{@codepen: Codepen ID or URL}
+```
 
-  
+Ví dụ
 
-  <iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=http://jsfiddle.net/kizu/zfUyN/&amp;provider=jsfiddle" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
+```none
+{@codepen: https://codepen.io/nickmoreton/pen/gbyygq}
+```
 
-  
 
-  ### Google slide
 
-  Đối với tài liệu bạn muốn chia sẻ từ Google slide thì bạn cần phải public tài liệu đó để mọi người có thể xem được, rồi dùng link tài liệu đã được public với cú pháp sau:
+<iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://codepen.io/nickmoreton/pen/gbyygq&amp;provider=codepen" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
 
-  ```none
-  {@googleslide: document_link}
-  ```
 
-  Ví dụ
+### Gist
 
-  ```none
-  {@googleslide: https://docs.google.com/presentation/d/1nJ65LUlu9k_tfuQJ4jq4z-qmqOQZ0DjKKw8wn5qnnFA/edit#slide=id.p}
-  ```
+```none
+{@gist: Gist ID or URL}
+```
 
-  
+Ví dụ
 
-  <iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://docs.google.com/presentation/d/1nJ65LUlu9k_tfuQJ4jq4z-qmqOQZ0DjKKw8wn5qnnFA/edit#slide=id.p&amp;provider=googleslide" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
+```none
+{@gist: https://gist.github.com/JeffreyWay/207e3bfdb5cafff050a1d75dbf755a5c}
+```
 
-  
 
-  Đối với những người mới sử dụng thì hẳn là chưa thể nhớ hết được những cú pháp của markdown, nhưng bạn hãy yên tâm vì bạn luôn có thể xem chỉ dẫn cú pháp markdown bằng cách click vào biểu tưởng dấu hỏi được đính ở phía trên của editor.
 
-  ![img](https://viblo.asia/uploads/46a22192-e47c-440b-aae8-47a0ee4ac96a.png)
+<iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://gist.github.com/JeffreyWay/207e3bfdb5cafff050a1d75dbf755a5c&amp;provider=gist" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
 
-  ## Công thức toán học
 
-  Bên cạnh các cú pháp Markdown phổ biến, Viblo còn hỗ trợ viết các công thức toán học theo cú pháp của $ TeX $.
+### JSFiddle
+
+```none
+{@jsfiddle: JSFiddle URL}
+```
+
+Ví dụ
+
+```none
+{@jsfiddle: http://jsfiddle.net/kizu/zfUyN/}
+```
+
+
+
+<iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=http://jsfiddle.net/kizu/zfUyN/&amp;provider=jsfiddle" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
+
+
+### Google slide
+
+Đối với tài liệu bạn muốn chia sẻ từ Google slide thì bạn cần phải public tài liệu đó để mọi người có thể xem được, rồi dùng link tài liệu đã được public với cú pháp sau:
+
+```none
+{@googleslide: document_link}
+```
+
+Ví dụ
+
+```none
+{@googleslide: https://docs.google.com/presentation/d/1nJ65LUlu9k_tfuQJ4jq4z-qmqOQZ0DjKKw8wn5qnnFA/edit#slide=id.p}
+```
+
+
+
+<iframe class="embed-responsive-item" type="text/html" src="https://viblo.asia/embed?url=https://docs.google.com/presentation/d/1nJ65LUlu9k_tfuQJ4jq4z-qmqOQZ0DjKKw8wn5qnnFA/edit#slide=id.p&amp;provider=googleslide" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="box-sizing: border-box; position: absolute; top: 0px; bottom: 0px; left: 0px; width: 825px; height: 464.063px; border: 0px;"></iframe>
+
+
+Đối với những người mới sử dụng thì hẳn là chưa thể nhớ hết được những cú pháp của markdown, nhưng bạn hãy yên tâm vì bạn luôn có thể xem chỉ dẫn cú pháp markdown bằng cách click vào biểu tưởng dấu hỏi được đính ở phía trên của editor.
+
+![img](https://viblo.asia/uploads/46a22192-e47c-440b-aae8-47a0ee4ac96a.png)
+
+.
