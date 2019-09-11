@@ -1,0 +1,33 @@
+{
+  "name": "learn-standard",
+  "version": "1.0.0",
+  "description": "1. [Git-Free part 1](https://viblo.asia/p/nhung-dieu-khong-phai-ai-cung-noi-cho-ban-ve-git-part-1-1VgZvwkYlAw \"Git chuyên sâu\")\r 2. [Git-Free part 2](https://viblo.asia/p/nhung-dieu-khong-phai-ai-cung-noi-cho-ban-ve-git-part-2-GrLZDXrBZk0 \"Git chuyên sâu\")",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sungmino/Learn-standard.git"
+  },
+  "author": "sungmino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sungmino/Learn-standard/issues"
+  },
+  "homepage": "https://github.com/sungmino/Learn-standard#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-eslint-plugin": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "standard": "^14.1.0"
+  }
+}
