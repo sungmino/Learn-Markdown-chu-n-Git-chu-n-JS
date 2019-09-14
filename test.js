@@ -12,8 +12,17 @@ app.get('/', async (req, res) => {
 })
 
 app.get('/a', async (req, res) => {
-  if (1 !== 2) {
+  const d = 3
+  if (d === 2) {
     console.log('????...')
   }
   res.send('kkkk...')
+})
+
+app.get('/b', async (req, res) => {
+  const a = 2
+  if (a === 1) {
+    console.log('error: false')
+  }
+  res.send('error: true')
 })
