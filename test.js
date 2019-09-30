@@ -21,6 +21,24 @@ app.get('/a', async (req, res) => {
 
 app.get('/b', async (req, res) => {
   const a = 2
+  var person1 = { firstname: 'Hung', lastname: 'Nam' }
+  var person2 = { firstname: 'Hoa', lastname: 'Cai' }
+
+  function say (greeting1, greeting2) {
+    console.log(greeting1 + ',' + ' ' + greeting2 + ' ' + this.firstname + ' ' + this.lastname)
+  }
+  say.call(person1, 'Hello', 'Good morning')
+  say.call(person2, 'Hello', 'Good morning')
+
+  say.apply(person1, ['Hello', 'Good moring'])
+  say.apply(person2, ['hELLO', 'Good morning'])
+
+  var sayHelloNam = say.bind(person1, 'Hello', 'Good morning')
+  var sayHelloCai = say.bind(person2, 'Hellooo', 'Good morning')
+
+  sayHelloCai()
+  sayHelloNam()
+
   if (a === 1) {
     console.log('error: false')
   }
