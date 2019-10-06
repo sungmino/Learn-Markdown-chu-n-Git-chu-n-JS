@@ -6,7 +6,9 @@
 
 3. [Git-Newfind](https://viblo.asia/p/git-va-mot-so-dieu-can-biet-1VgZv9qOKAw)
 
-4. Command git :
+4. [Git-All](http://www.manleviet.info/bai-viet/github?tmpl=%2Fsystem%2Fapp%2Ftemplates%2Fprint%2F&showPrintDialog=1)
+
+5. Command git :
 
    -  Delete file/folder: `git rm -r name_file`
 
